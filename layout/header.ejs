@@ -1,4 +1,31 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header id="header" class="header py-6">
+	<div class="container d-flex align-items-md-center">
+		<% if (page === 'index') { %>
+		<h1 class="logo d-flex">
+			<img src="../assets/images/logo.png" alt="logo"/>
+			<div class="d-none d-md-flex align-items-center ps-4">
+				<span class="fs-2 me-1">7TAO</span>
+				<span class="fs-6">活動訂票網</span>
+			</div>
+		</h1>
+		<% } else { %>
+		<h2 class="logo d-flex">
+			<img src="../assets/images/logo.png" alt="logo"/>
+			<div class="d-none d-md-flex align-items-center ps-4">
+				<span class="fs-2 me-1">7TAO</span>
+				<span class="fs-6">活動訂票網</span>
+			</div>
+		</h2>
+		<% } %>
+		<div class="navbar-search d-flex mx-6 ms-md-9 border border-2 border-primary">
+			<input type="text" placeholder="探索活動" class="ps-3 ps-md-6 py-2 py-md-4y border-0" />
+            <button type="button" class="bg-primary text-white border-0 p-3 p-md-4">
+				<i class="icofont-search-1"></i>
+			</button>
+		</div>
+		<div class="ms-auto d-none d-md-flex">
+			<a href="#" class="me-6">REGISTER</a>
+			<a href="#">LOGIN</a>
+		</div>
+	</div>
+</header>

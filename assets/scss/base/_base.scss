@@ -1,0 +1,37 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+//icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+
+a{
+    // text-decoration: none;
+    color:inherit;
+    display: inline-block;
+}
+img,
+svg{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+:is(h1,h2,h3,h4,h5,h6,p,ul,ol,dl){    
+    padding: 0;
+    margin: 0;
+}
+
+input::placeholder{
+    color:$gray;
+}
+input:not(:placeholder-shown){
+    &:is(:invalid){
+        border:2px solid $danger;
+    }
+    &:is(:focus:invalid){
+        outline:3px solid $danger;
+        outline-offset: -2px;
+        border: 0;
+    }
+}

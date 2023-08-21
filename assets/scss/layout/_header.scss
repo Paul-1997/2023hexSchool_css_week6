@@ -1,4 +1,26 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo{
+  img{
+    height: 40px;
+    aspect-ratio: 1;
+    @include large-screen{
+      height: 53px;
+    }
+  }
+}
+.navbar-search{
+  height: 39px;
+  @include large-screen{
+    height: 55px;
+  }
+  button{
+    height: 100%;
+    aspect-ratio: 1;
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+    @include large-screen{
+      font-size: 19px;
+    }
+  }
+
 }

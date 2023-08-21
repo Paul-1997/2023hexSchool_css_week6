@@ -63,7 +63,7 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800  
 ) !default;
 // scss-docs-end colors-map
 
@@ -297,15 +297,23 @@ $cyans: (
 ) !default;
 // fusv-enable
 
-// scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// scss-docs-start theme-color-variables changed:
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+// $danger:        $red !default;
+$primary:       #303030 !default;
+$secondary:       #FBFF22 !default;
+$light:         #EBEAE8 !default;
+$dark:          #303030 !default;
+$danger:        #C96464 !default;
+$gray:          #878787 !default;
+$gray-neutral:  #4F4F4F !default;
+
+$info:          $cyan !default; 
 $success:       $green !default;
-$info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -333,9 +341,10 @@ $escaped-characters: (
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
-
+//changed:
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+// $enable-rounded:              true !default;
+$enable-rounded:              false !default; 
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -345,7 +354,8 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+// $enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -372,13 +382,19 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-$spacers: (
+$spacers: ( //changed:
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .125, //4
+  2: $spacer * .5, //8
+  3: $spacer * .75, //12
+  4: $spacer * 1, //16
+  5: $spacer * 1.25, //20
+  6: $spacer * 1.5,//24
+  7: $spacer * 2, //32
+  8: $spacer * 2.5, //40
+  9: $spacer * 3, // 48
+  10: $spacer * 3.75, // 60
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -398,7 +414,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+// $body-bg:                   $white !default;
+$body-bg:                   #F3F1E5 !default;//changed:
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -407,7 +424,8 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+// $link-decoration:                         underline !default;
+$link-decoration:                         none !default;//changed:
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -419,7 +437,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default;//changed:
 
 
 // Grid breakpoints
@@ -539,8 +558,8 @@ $aspect-ratios: (
 // Font, line-height, and color for body text, headings, and more.
 
 // scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// stylelint-disable value-keyword-case //changed:
+$font-family-sans-serif:      "Noto Sans TC", "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -572,25 +591,33 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$subtitle-font-size:                $font-size-base * 1.125; //18 changed:
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
+//changed:
 $font-sizes: (
   1: $h1-font-size,
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  sm: $font-size-sm,
+  md: $subtitle-font-size
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+//changed:
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default; 
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+// $headings-font-weight:        500 !default;
+// $headings-line-height:        1.2 !default;
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
