@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO活動訂票網</title>
+    <link rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA6ElEQVQ4jaWTUUrDUBBFz+QVLf2qSJ5kCfoTF5AVtAspuAch4h4EF6Ir6ALMHloiDdK/IqUv1w9BA+oLphfma+YeZoYZu7w6VVGMGaLl8p1RUYx5eDwfBLhZvJEMcnYUBUhC0nBA07Q0mzYKGMWSr3VAAn/h/g94ftphZoQg1usDs/mkHyCJZtNS1wG1cFduASjvz6iqPVnmSNMEM/vy/NyBgRkk7rsoBIH4jFgHZob3Du8dq9WO23KKc4Yk8uuT/hG6ms0nVC97MMjz381RAECWObBYRQ8g9f2HGgV0t/2Xjv4FO/adPwBZwEb2QgPXrQAAAABJRU5ErkJggg==" type="image/x-icon">
+    <script type="module" crossorigin src="/2023hexSchool_css_week6/assets/main-93a1e14d.js"></script>
+    <link rel="stylesheet" href="/2023hexSchool_css_week6/assets/main-d67c4275.css">
+  </head>
+  <body>
+    <header>
+	<div class="border-bottom border-2 border-primary py-6">
+		<div class="container d-flex align-items-center">
+			
+			<h1 class="logo d-flex me-2 me-lg-9">
+				<a href="./index.html" class="d-flex" title="7TAO活動訂票網">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" />
+				</a>
+				<div class="d-none d-md-flex align-items-center ps-4">
+					<span class="fs-2 me-1">7TAO</span>
+					<span class="fs-6">活動訂票網</span>
+				</div>
+			</h1>
+			
+			<div class="navbar-search d-flex border border-2 border-primary">
+				<input
+					type="text"
+					placeholder="探索活動"
+					class="noto-sans ps-3 ps-md-6 py-2 py-md-4y border-0"
+				/>
+				<button
+					type="button"
+					class="bg-primary text-secondary text-hover-info border-0 p-3 p-md-4"
+				>
+					<i class="icofont-search-1"></i>
+				</button>
+			</div>
+
+			<nav class="ms-auto">
+				<!-- MOBILE -->
+				<a
+					class="d-md-none border rounded border-primary px-3 py-1"
+					data-bs-toggle="collapse"
+					href="#header-collapse"
+					role="button"
+					aria-expanded="false"
+					aria-controls="header-collapse"
+				>
+					<span class="hamburger-icon material-icons"> menu </span>
+				</a>
+
+				<!-- PC -->
+				<div class="d-none d-md-flex">
+					<a href="#" class="me-6 text-hover-info fs-md">
+						<i class="icofont-ui-file me-1"></i>
+						REGISTER</a
+					>
+					<a href="./login.html" class="text-hover-info fs-md">
+						<i class="icofont-ui-user me-1"></i>
+						LOGIN</a
+					>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- header-collapse -->
+	<ul
+	class="collapse py-6 px-3 border-bottom border-2 border-primary"
+	id="header-collapse"
+>
+	<li class="mb-4">
+		<a href="#" class="me-6 text-hover-info fs-md">
+			<i class="icofont-ui-file me-1"></i>
+			REGISTER</a
+		>
+	</li>
+	<li>
+		<a href="./login.html" class="text-hover-info fs-md">
+			<i class="icofont-ui-user me-1"></i>
+			LOGIN</a
+		>
+	</li>
+	</ul>
+</header>
+
+    <main style="min-height: 70vh;">
+    </main>
+
+    <footer class="footer noto-sans text-center  border-3 border-top border-dark fs-sm fs-lg-6 py-6 py-lg-7 ">
+    © 7TAO七逃. All Rights Reserved
+</footer>
+    
+  </body>
+</html>
