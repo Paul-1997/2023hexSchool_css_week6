@@ -1,0 +1,35 @@
+@each $theme , $color in $theme-colors{
+	.text-hover-#{$theme}{
+		&:hover{
+			color: $color !important;//每次都搶不贏bsஇдஇ
+		}
+	}
+	.bg-hover-#{$theme}{
+		&:hover{
+			background: $color!important;
+		}
+	}
+}
+
+@for $i from 1 through 10{
+	.hover-op-#{$i}{
+		&:hover{
+			transition:  opacity 500ms;
+			opacity: $i * .1;
+		}
+	}
+}
+
+.hover-underline{
+    &:hover{
+        text-decoration: underline;
+        text-decoration-thickness: .1em;
+    }
+}
+.hover-wavy{
+    &:hover{
+        text-decoration: underline wavy;
+        text-decoration-thickness: .1em;
+        text-underline-offset: .2em;
+    }
+}

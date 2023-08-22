@@ -3,11 +3,17 @@
 @import './node_modules/bootstrap/scss/maps';
 @import './utils/_utilities';
 @import "../../node_modules/bootstrap";
-
+@import '../icofont/icofont.min.css';
 
 @import './base/_base.scss';
+@import './base/_typography.scss';
+
 @import './utils/_mixin.scss';
+
+@import './helper/_hover.scss';
+
 @import './component/_button.scss';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 

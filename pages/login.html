@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LOGIN | 7TAO活動訂票網</title>
+		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="wrap d-flex flex-column min-vh-100">
+			<%- include('./layout/header',{page:"index"}); -%>
+			<main class="flex-grow-1">
+				<div class="container">
+					<div class="row mt-6 mt-md-10 justify-content-center">
+						<div class="col-md-4">
+							<img
+								src="../assets/images/sparkler.png"
+								alt="sparkler"
+								class="d-block mb-4 mx-auto"
+							/>
+							<h1 class="text-center fs-4">會員登入</h1>
+							<form action="#">
+								<div class="mb-4">
+                                    <label for="loginUserId" class="form-label noto-sans">帳號</label>
+								<input
+									type="password"
+									id="loginUserId"
+									class="form-control w-100 border border-2 border-primary ps-4 py-3 fs-5 noto-sans"
+                                    placeholder="請輸入帳號"
+								/>
+                                </div>
+								<div class="mb-6">
+                                    <label for="loginUserPassword" class="form-label noto-sans">密碼</label>
+								<input
+									type="password"
+									id="loginUserPassword"
+									class="form-control w-100 border border-2 border-primary ps-4 py-3 fs-5 noto-sans"
+                                    placeholder="請輸入密碼"
+								/>
+                                </div>
+                                <button class="btn btn-primary w-100 py-2 noto-sans fs-md fs-md-5 d-flex align-items-center justify-content-center">登入<span class="material-icons fs-md fs-md-5">
+                                    keyboard_double_arrow_right
+                                    </span></button>
+                                <!-- <input type="button" class="btn btn-primary w-100" value="登入"> FIXME: --> 
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<%- include('./layout/footer'); -%>
+		</div>
+
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>

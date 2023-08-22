@@ -8,11 +8,13 @@
   }
 }
 .navbar-search{
+  margin-inline:1.5vw;
   height: 39px;
   @include large-screen{
     height: 55px;
   }
   button{
+    // color:$secondary;
     height: 100%;
     aspect-ratio: 1;
     font-size: 15px;
@@ -22,5 +24,23 @@
       font-size: 19px;
     }
   }
+  input{
+    width: 150px;
+    @include large-screen{
+      width: clamp(150px,15vw,280px);
+    }
+    
+    &::placeholder{
+      color: $gray-neutral;
+      @include large-screen{
+        color: $gray;
+      }
+    }
+  }
 
+}
+
+.hamburger-icon{
+  font-size: 30px;
+  vertical-align: middle;
 }
