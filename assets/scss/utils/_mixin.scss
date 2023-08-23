@@ -2,7 +2,7 @@
 
 
 @mixin large-screen{
-    @media (min-width: 762px) {
+    @media (min-width: 767px) {
         @content;
     }
 }

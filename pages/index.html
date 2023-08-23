@@ -1,20 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7TAO活動訂票網</title>
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <%- include('./layout/header',{page:"index"}); -%>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>7TAO活動訂票網</title>
+		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<%- include('./layout/header',{page:"index"}); -%>
 
-    <main style="min-height: 70vh;">
-    </main>
+		<main>
+			<div class="container">
+				<div class="index-banner px-8 px-md-9 pt-4 pt-md-9 pb-6 mb-7 mb-md-9">
+					<div class="position-relative text-white">
+						<time class="fs-xl lh-sm position-absolute top-0 start-0"
+							>19 MAY <br class="d-md-none" />2023</time
+						>
+						<div
+							class="position-absolute bottom-0 start-50 translate-middle-x text-center w-75"
+						>
+							<h2 class="fs-md fs-md-4 fw-bold letter-spacing-5">
+								隔牆有耳-沒有草東的派對
+							</h2>
+							<p class="d-none d-md-block mt-4 noto-sans">
+								你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+								帶上啤酒、野餐墊，讓我們在Live
+								House外面一起開場「沒有草東的派對」吧！
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+							<a href="">
+                <img src="../assets/images/cate01.svg" alt="" />
+							  <p>演出</p>
+              </a>
+						</div>
+					</div>
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+              <a href="">
+                <img src="../assets/images/cate02.svg" alt="" />
+                <p>聯誼</p>
+              </a>
+						</div>
+					</div>
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+              <a href="">
+                <img src="../assets/images/cate03.svg" alt="" />
+							<p>展覽</p>
+              </a>
+						</div>
+					</div>
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+              <a href="">
+                <img src="../assets/images/cate04.svg" alt="" />
+                <p>美食</p>
+              </a>
 
-    <%- include('./layout/footer'); -%>
+						</div>
+					</div>
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+              <a href="">
+                <img src="../assets/images/cate05.svg" alt="" />
+                <p>戶外</p>
+              </a>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+						</div>
+					</div>
+					<div class="act-catetory col-4 col-md-2">
+						<div class="text-center border border-2">
+							<a href="">探索<br>更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

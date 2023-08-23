@@ -1,3 +1,29 @@
-.index-title {
-  font-size: 100px;
+.index-banner{
+  background-size: cover;
+  background-position: center;
+  height: 518px;
+  background-image: url(/assets/images/event/13.jpg);
+  @include large-screen{
+    height: 350px;
+  }
+
+
+  > div {//content
+    height: 100%;
+    margin-inline: auto;
+  }
+}
+
+.act-catetory{
+  > div{
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+  }
+  img {
+    height: 40px;
+    @include large-screen{
+      height: 80px;
+    }
+  }
 }

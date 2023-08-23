@@ -507,7 +507,8 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+// $border-color:                $gray-300 !default;
+$border-color:                $black !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -592,7 +593,9 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
-$subtitle-font-size:                $font-size-base * 1.125; //18 changed:
+$md-font-size:                $font-size-base * 1.125; //18 changed:
+$lg-font-size : $font-size-base * 3.75;
+$xl-font-size : $font-size-base * 4;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -605,7 +608,9 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   sm: $font-size-sm,
-  md: $subtitle-font-size
+  md: $md-font-size,
+  lg: $lg-font-size,
+  xl: $xl-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -617,7 +622,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 // $headings-font-weight:        500 !default;
 // $headings-line-height:        1.2 !default;
-$headings-font-weight:        700 !default;
+$headings-font-weight:        400 !default;
 $headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
