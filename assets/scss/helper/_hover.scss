@@ -24,12 +24,27 @@
     &:hover{
         text-decoration: underline;
         text-decoration-thickness: .1em;
+		text-underline-offset: .25em;
     }
 }
-.hover-wavy{
-    &:hover{
-        text-decoration: underline wavy;
-        text-decoration-thickness: .1em;
-        text-underline-offset: .2em;
-    }
+
+.hover-spotlight{
+	position: relative;
+	z-index: 1;
+	&::before{
+		content: "";
+		width: 29px;
+		aspect-ratio: 1;
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-color: $secondary;
+		border-radius: 100vw;
+		opacity: 0;
+		transform: translateX(-33%) translateY(-10%);
+	}
+
+	&:hover::before{
+		opacity: 1;
+	}
 }

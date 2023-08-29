@@ -1,3 +1,10 @@
-// .card{
-//     background-color: inherit;
-// }
+.card-header + img{
+        height: 210px;
+        object-fit: cover;
+        @include large-screen{
+            height: 255px;
+        }
+}
+.card-footer img{
+    height: 24px;
+}
