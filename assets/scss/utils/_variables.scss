@@ -312,6 +312,7 @@ $danger:        #C96464 !default;
 $gray:          #878787 !default;
 $gray-neutral:  #4F4F4F !default;
 $info:          #9C9E18 !default;   
+$creamy :       #F3F1E5!default; //bg-color
 
 $success:       $green !default;
 $warning:       $yellow !default;
@@ -326,7 +327,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -355,8 +356,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-// $enable-rfs:                  true !default;
-$enable-rfs:                  false !default;
+$enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -416,7 +416,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 // $body-bg:                   $white !default;
-$body-bg:                   #F3F1E5 !default;//changed:
+$body-bg:                   $creamy !default;//changed:
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -594,8 +594,9 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 $md-font-size:                $font-size-base * 1.125; //18 changed:
-$lg-font-size : $font-size-base * 3.75;
-$xl-font-size : $font-size-base * 4;
+$lg-font-size : $font-size-base * 3; // 48
+$xl-font-size : $font-size-base * 3.75; //60
+$xxl-font-size : $font-size-base * 4;  //64
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -610,7 +611,8 @@ $font-sizes: (
   sm: $font-size-sm,
   md: $md-font-size,
   lg: $lg-font-size,
-  xl: $xl-font-size
+  xl: $xl-font-size,
+  xxl : $xxl-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1275,11 +1277,13 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+// $card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       inherit !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+// $card-bg:                           $white !default;
+$card-bg:                           $creamy !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables

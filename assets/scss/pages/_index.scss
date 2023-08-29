@@ -14,12 +14,17 @@
   }
 }
 
-.act-catetory{
-  > div{
-    aspect-ratio: 1;
+.act-category{
+
+  a{
     display: grid;
-    place-items: center;
+    place-items: center;  
+    height: 112px;
+    @include large-screen{
+      height: 196px;
+    }
   }
+  
   img {
     height: 40px;
     @include large-screen{
