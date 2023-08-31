@@ -6,7 +6,9 @@
 	}
 	.bg-hover-#{$theme}{
 		&:hover{
-			background: $color!important;
+			&{	
+				background: $color!important;
+			}
 		}
 	}
 }
