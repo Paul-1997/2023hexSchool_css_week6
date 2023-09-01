@@ -32,3 +32,12 @@
     }
   }
 }
+
+.activity__online__img{
+  height: 351px;
+  @include large-screen{
+    height: 317px;
+  }
+  object-fit: cover;
+  object-position: center 30%;
+}

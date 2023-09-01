@@ -12,11 +12,9 @@
 		<%- include('./layout/header',{page:"index"}); -%>
 
 		<main class="mt-4 mt-md-6">
-			<div class="container">
-				<!-- banner -->
-				<section
-					class="index-banner px-8 px-md-9 pt-4 pt-md-9 pb-6 mb-7 mb-md-9"
-				>
+			<!-- banner -->
+			<section class="banner container mb-7 mb-md-9">
+				<div class="index-banner px-8 px-md-9 pt-4 pt-md-9 pb-6">
 					<div class="position-relative text-white">
 						<time class="fs-xl lh-sm position-absolute top-0 start-0"
 							>19 MAY <br class="d-md-none" />2023</time
@@ -34,9 +32,11 @@
 							</p>
 						</div>
 					</div>
-				</section>
-				<!-- category -->
-				<ul class="row list-unstyled g-md-6 g-2 mb-7 mb-md-9">
+				</div>
+			</section>
+			<!-- category -->
+			<section class="category container mb-7 mb-md-9">
+				<ul class="row list-unstyled g-md-6 g-2">
 					<li class="act-category col-4 col-md-2">
 						<a
 							href="#"
@@ -121,7 +121,9 @@
 						</a>
 					</li>
 				</ul>
-
+			</section>
+			<!-- activity__recent -->
+			<section class="activity__recent container mb-7 mb-md-10">
 				<h2
 					class="mb-6 mb-md-7 py-4 py-md-6 px-3 px-md-7 border border-2 border-primary d-flex justify-content-between align-items-center"
 					data-aos="flip-down"
@@ -129,7 +131,7 @@
 					<span class="fs-4 fs-md-xxl">RECENT</span>
 					<span class="fs-md-3 fw-bold">近期活動</span>
 				</h2>
-				<section class="row recent-activity mb-7 mb-md-10 gy-md-9 gy-6">
+				<div class="row  gy-md-9 gy-6">
 					<div class="col-md-6 col-lg-4" data-aos="zoom-in">
 						<div class="card border-0">
 							<div
@@ -378,8 +380,10 @@
 							</div>
 						</div>
 					</div>
-				</section>
-
+				</div>
+			</section>
+			<!-- activity__online -->
+			<section class="activity__online container  mb-md-10">
 				<h2
 					class="mb-6 mb-md-7 py-4 py-md-6 px-3 px-md-7 border border-2 border-primary d-flex justify-content-between align-items-center"
 					data-aos="flip-down"
@@ -387,23 +391,28 @@
 					<span class="fs-4 fs-md-xxl">ONLINE</span>
 					<span class="fs-md-3 fw-bold">線上活動</span>
 				</h2>
-				<section class="row mb-md-10" data-aos="flip-left">
-					<div class="col-md-7">
+				<div class="row" data-aos="flip-left">
+					<div class="col-lg-7">
 						<img
 							src="../assets/images/event/online.jpg"
 							alt="ChatGpt"
-							class="w-100"
-							style="height: 317px"
+							class="w-100 activity__online__img"
 						/>
 					</div>
-					<div class="col-md-5">
+					<div class="col-lg-5">
 						<h3 class="fw-bold mb-md-4 mb-2">切特居批踢</h3>
 						<ul class="list-unstyled d-flex mb-md-7 mb-3">
-							<li class="me-2">競賽</li>
-							<li class="me-2">科技</li>
-							<li>有趣</li>
+							<li class="me-2">
+								<a href="#" class="tag"> 有趣 </a>
+							</li>
+							<li class="me-2">
+								<a href="#" class="tag"> 科技 </a>
+							</li>
+							<li>
+								<a href="#" class="tag">競賽</a>
+							</li>
 						</ul>
-						<p class="noto-sans">
+						<p class="noto-sans mb-md-7">
 							最近網路上很流行的AI程式
 							ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br />
 							這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br />
@@ -411,35 +420,33 @@
 						</p>
 						<button class="btn btn-primary w-100">查看活動詳情</button>
 					</div>
-				</section>
-				<section class="row mb-md-10">
-					<div class="col-12">
-						<div class="swiper album__marquee">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
-								</div>
-								<div class="swiper-slide">
-									活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
-								</div>
-							</div>
+				</div>
+			</section>
+			<section class="album mb-md-10">
+				<div class="swiper album__marquee">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
 					</div>
-					<div></div>
-					<div class="col-12">
-						<div class="swiper album__marquee">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
-								</div>
-								<div class="swiper-slide">
-									活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
-								</div>
-							</div>
+				</div>
+				<div class="album__content"></div>
+				<div class="swiper album__marquee">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
 					</div>
-				</section>
-				<section class="contact-us row mb-9 mb-md-10">
+				</div>
+			</section>
+			<section class="contact-us container">
+				<div class="row mb-9 mb-md-10">
 					<div class="col-md-6 pe-0">
 						<div class="border border-2 border-primary">
 							<h3
@@ -522,8 +529,8 @@
 							</button>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 			<p
 				class="text-center py-md-10 py-9 border-top border-3 fw-bold fs-md-2 fs-md"
 			>
@@ -533,7 +540,7 @@
 		</main>
 
 		<%- include('./layout/signupModal'); -%> <%- include('./layout/footer'); -%>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper.min.js"></script> -->
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>
