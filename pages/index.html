@@ -7,7 +7,8 @@
 		<title>7TAO活動訂票網</title>
 		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 	</head>
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<body>
 		<%- include('./layout/header',{page:"index"}); -%>
 
@@ -383,7 +384,7 @@
 				</div>
 			</section>
 			<!-- activity__online -->
-			<section class="activity__online container  mb-md-10">
+			<section class="activity__online container  mb-7 mb-md-10">
 				<h2
 					class="mb-6 mb-md-7 py-4 py-md-6 px-3 px-md-7 border border-2 border-primary d-flex justify-content-between align-items-center"
 					data-aos="flip-down"
@@ -396,12 +397,12 @@
 						<img
 							src="../assets/images/event/online.jpg"
 							alt="ChatGpt"
-							class="w-100 activity__online__img"
+							class="w-100 activity__online__img mb-3 mb-lg-0"
 						/>
 					</div>
 					<div class="col-lg-5">
-						<h3 class="fw-bold mb-md-4 mb-2">切特居批踢</h3>
-						<ul class="list-unstyled d-flex mb-md-7 mb-3">
+						<h3 class="fw-bold mb-lg-4 mb-2">切特居批踢</h3>
+						<ul class="list-unstyled d-flex mb-lg-7 mb-3">
 							<li class="me-2">
 								<a href="#" class="tag"> 有趣 </a>
 							</li>
@@ -412,7 +413,7 @@
 								<a href="#" class="tag">競賽</a>
 							</li>
 						</ul>
-						<p class="noto-sans mb-md-7">
+						<p class="noto-sans mb-3 mb-md-7">
 							最近網路上很流行的AI程式
 							ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br />
 							這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br />
@@ -423,23 +424,41 @@
 				</div>
 			</section>
 			<section class="album mb-md-10">
-				<div class="swiper album__marquee">
+				<div class="swiper album__marquee__forward">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
 							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
-						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
 							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
 					</div>
 				</div>
 				<div class="album__content"></div>
-				<div class="swiper album__marquee">
+				<div class="swiper album__marquee__backward">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
 							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
-						<div class="swiper-slide bg-primary text-secondary py-3 w-auto">
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
+							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+						</div>
+						<div class="swiper-slide bg-primary text-secondary py-4 py-md-6 w-auto fs-md-2 letter-spacing-10">
 							活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
 						</div>
 					</div>
@@ -540,7 +559,7 @@
 		</main>
 
 		<%- include('./layout/signupModal'); -%> <%- include('./layout/footer'); -%>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper.min.js"></script> -->
+
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>

@@ -34,10 +34,10 @@
 }
 
 .activity__online__img{
-  height: 351px;
+  height: 157px;
+  object-fit: cover;
+  object-position: center 33%;
   @include large-screen{
     height: 317px;
   }
-  object-fit: cover;
-  object-position: center 30%;
 }
