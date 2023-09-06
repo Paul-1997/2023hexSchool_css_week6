@@ -1,7 +1,17 @@
-.album__card{    
+.album__content{
+    ul > li {
+        &:nth-child(2n){
+            rotate: 2deg;
+        }
+        &:nth-child(3){
+            rotate: -2deg;
+        }
+    }
+}
+.album__card{
     margin: 0 auto;
     img{
-        
+        aspect-ratio: 1;
         object-fit: cover;
     }
 }

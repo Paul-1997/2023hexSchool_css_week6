@@ -27,9 +27,9 @@
         padding: 8px 16px;
         background: $white;
         color:$black;
-        rotate: 4deg;
+        rotate: -4deg;
         &:nth-child(3){
-            rotate: 3deg;
+            rotate: -3deg;
         }
     }
 }
