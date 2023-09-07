@@ -6,12 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LOGIN | 7TAO活動訂票網</title>
 		<link rel="icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA6ElEQVQ4jaWTUUrDUBBFz+QVLf2qSJ5kCfoTF5AVtAspuAch4h4EF6Ir6ALMHloiDdK/IqUv1w9BA+oLphfma+YeZoYZu7w6VVGMGaLl8p1RUYx5eDwfBLhZvJEMcnYUBUhC0nBA07Q0mzYKGMWSr3VAAn/h/g94ftphZoQg1usDs/mkHyCJZtNS1wG1cFduASjvz6iqPVnmSNMEM/vy/NyBgRkk7rsoBIH4jFgHZob3Du8dq9WO23KKc4Yk8uuT/hG6ms0nVC97MMjz381RAECWObBYRQ8g9f2HGgV0t/2Xjv4FO/adPwBZwEb2QgPXrQAAAABJRU5ErkJggg==" type="image/x-icon" />
-		<script type="module" crossorigin src="/2023hexSchool_css_week6/assets/main-93a1e14d.js"></script>
-		<link rel="stylesheet" href="/2023hexSchool_css_week6/assets/main-d67c4275.css">
+		<script type="module" crossorigin src="/2023hexSchool_css_week6/assets/main-6a5d26e5.js"></script>
+		<link rel="stylesheet" href="/2023hexSchool_css_week6/assets/main-ba834d4a.css">
 	</head>
 	<body>
 		<div class="wrap d-flex flex-column min-vh-100">
-			<header>
+			<header class="position-relative">
 	<div class="border-bottom border-2 border-primary py-6">
 		<div class="container d-flex align-items-center">
 			
@@ -21,7 +21,7 @@
 				</a>
 				<div class="d-none d-md-flex align-items-center ps-4">
 					<span class="fs-2 me-1">7TAO</span>
-					<span class="fs-6">活動訂票網</span>
+					<span class="fs-6 fw-bold">活動訂票網</span>
 				</div>
 			</h2>
 			
@@ -68,11 +68,11 @@
 	</div>
 	<!-- header-collapse -->
 	<ul
-	class="collapse py-6 px-3 border-bottom border-2 border-primary"
+	class="collapse py-6 px-3 border-bottom border-2 border-primary position-absolute top-100 w-100 header-collapse"
 	id="header-collapse"
 >
 	<li class="mb-4">
-		<a href="#" class="me-6 text-hover-info fs-md">
+		<a href="#" class="text-hover-info fs-md">
 			<i class="icofont-ui-file me-1"></i>
 			REGISTER</a
 		>
@@ -93,8 +93,9 @@
 								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII="
 								alt="sparkler"
 								class="d-block mb-4 mx-auto"
+								width="32"
 							/>
-							<h1 class="text-center fs-4">會員登入</h1>
+							<h1 class="text-center fs-4 mb-4">會員登入</h1>
 							<form action="#">
 								<div class="mb-4">
                                     <label for="loginUserId" class="form-label noto-sans">帳號</label>
